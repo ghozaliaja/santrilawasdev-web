@@ -105,6 +105,42 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <SpotlightCard>
+              <div className="h-64 bg-gray-700 flex items-center justify-center relative overflow-hidden rounded-t-xl group">
+                <img
+                  src="/projects/absen-sholat-1.jpg"
+                  alt="Absen Sholat MTsN 1 Labuhan Batu"
+                  className="w-full h-full object-cover object-top group-hover:scale-110 transition duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <div className="flex gap-2 mb-4">
+                  <span className="px-2 py-1 bg-emerald-500/20 text-emerald-400 text-xs rounded border border-emerald-500/30">
+                    Live Production
+                  </span>
+                  <span className="px-2 py-1 bg-blue-500/20 text-blue-400 text-xs rounded border border-blue-500/30">
+                    Web App
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">Absen Sholat MTsN 1 Labuhan Batu</h3>
+                <p className="text-gray-400 text-sm mb-4">
+                  Platform digital terintegrasi untuk monitoring kehadiran siswa/guru dan jurnal ibadah harian. Dilengkapi fitur notifikasi WhatsApp dan rekapitulasi otomatis.
+                </p>
+                <div className="flex gap-4 text-sm font-mono text-gray-500">
+                  <span>
+                    <i className="fab fa-react mr-1"></i> Next.js
+                  </span>
+                  <span>
+                    <i className="fas fa-database mr-1"></i> Prisma
+                  </span>
+                  <span>
+                    <i className="fab fa-whatsapp mr-1"></i> WA Gateway
+                  </span>
+                </div>
+              </div>
+            </SpotlightCard>
+
+            <SpotlightCard>
               <div className="h-64 bg-gray-700 flex items-center justify-center relative overflow-hidden rounded-t-xl">
                 <i className="fas fa-mobile-alt text-6xl text-gray-500 group-hover:scale-110 transition duration-500"></i>
                 <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent"></div>
