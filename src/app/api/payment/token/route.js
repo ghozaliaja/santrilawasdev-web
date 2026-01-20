@@ -2,11 +2,20 @@ import { NextResponse } from 'next/server';
 import midtransClient from 'midtrans-client';
 import prisma from '@/lib/prisma';
 
-const snap = new midtransClient.Snap({
-    isProduction: false,
-    serverKey: process.env.MIDTRANS_SERVER_KEY,
-    clientKey: process.env.MIDTRANS_CLIENT_KEY,
-});
+export const dynamic = 'force-dynamic';
+
+let snap;
+
+function getSnap() {
+    if (!snap) {
+        snap = new midtransClient.Snap({
+            isProduction: false,
+            serverKey: process.env.MIDTRANS_SERVER_KEY,
+            clientKey: process.env.MIDTRANS_CLIENT_KEY,
+        });
+    }
+    return snap;
+}
 
 export async function POST(request) {
     try {
@@ -45,7 +54,7 @@ export async function POST(request) {
             ],
         };
 
-        const token = await snap.createTransaction(parameter);
+        const token = await getSnap().createTransaction(parameter);
 
         return NextResponse.json({ token: token.token });
     } catch (error) {

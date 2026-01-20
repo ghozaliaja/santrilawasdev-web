@@ -1,9 +1,7 @@
-import { PrismaClient } from '@prisma/client';
+import { PrismaClient } from '@/generated/client/client';
 
 const prismaClientSingleton = () => {
-    return new PrismaClient({
-        datasourceUrl: process.env.DATABASE_URL,
-    });
+    return new PrismaClient();
 };
 
 const globalForPrisma = global;
