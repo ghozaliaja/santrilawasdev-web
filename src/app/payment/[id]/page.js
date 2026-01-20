@@ -10,6 +10,8 @@ export default async function PaymentPage({ params }) {
         where: { id },
     });
 
+    // const invoice = null; // Mock for build
+
     if (!invoice) {
         return (
             <div className="min-h-screen flex items-center justify-center bg-gray-50">

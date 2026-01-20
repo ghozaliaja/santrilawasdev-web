@@ -4,20 +4,22 @@ import prisma from '@/lib/prisma';
 
 export const dynamic = 'force-dynamic';
 
-let snap;
+// let snap;
 
-function getSnap() {
-    if (!snap) {
-        snap = new midtransClient.Snap({
-            isProduction: false,
-            serverKey: process.env.MIDTRANS_SERVER_KEY,
-            clientKey: process.env.MIDTRANS_CLIENT_KEY,
-        });
-    }
-    return snap;
-}
+// function getSnap() {
+//     if (!snap) {
+//         snap = new midtransClient.Snap({
+//             isProduction: false,
+//             serverKey: process.env.MIDTRANS_SERVER_KEY,
+//             clientKey: process.env.MIDTRANS_CLIENT_KEY,
+//         });
+//     }
+//     return snap;
+// }
 
 export async function POST(request) {
+    return NextResponse.json({ status: 'ok' });
+    /*
     try {
         const { id } = await request.json();
 
@@ -61,4 +63,5 @@ export async function POST(request) {
         console.error('Midtrans Error:', error);
         return NextResponse.json({ error: error.message }, { status: 500 });
     }
+    */
 }
