@@ -206,6 +206,42 @@ export default function Home() {
               </div>
             </SpotlightCard>
 
+            <SpotlightCard>
+              <div className="h-64 bg-gray-900 flex items-center justify-center relative overflow-hidden rounded-t-xl group">
+                <img
+                  src="/projects/perpus-dashboard.jpg"
+                  alt="Perpustakaan Digital MTsN 1 Labuhanbatu"
+                  className="h-full w-auto object-contain group-hover:scale-105 transition duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent"></div>
+              </div>
+              <div className="p-6">
+                <div className="flex gap-2 mb-4">
+                  <span className="px-2 py-1 bg-emerald-500/20 text-emerald-400 text-xs rounded border border-emerald-500/30">
+                    Web & Android
+                  </span>
+                  <span className="px-2 py-1 bg-orange-500/20 text-orange-400 text-xs rounded border border-orange-500/30">
+                    QR System
+                  </span>
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">Perpustakaan Digital</h3>
+                <p className="text-gray-400 text-sm mb-4">
+                  Sistem manajemen perpustakaan modern dengan fitur scan QR Code pada Kartu Pelajar untuk peminjaman & pengembalian buku yang lebih cepat.
+                </p>
+                <div className="flex gap-4 text-sm font-mono text-gray-500">
+                  <span>
+                    <i className="fab fa-react mr-1"></i> Next.js
+                  </span>
+                  <span>
+                    <i className="fab fa-android mr-1"></i> Capacitor
+                  </span>
+                  <span>
+                    <i className="fas fa-qrcode mr-1"></i> Scanner
+                  </span>
+                </div>
+              </div>
+            </SpotlightCard>
+
             <SpotlightCard className="flex flex-col items-center justify-center p-10 text-center min-h-[300px] border-dashed">
               <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mb-4 text-gray-600">
                 <i className="fas fa-code text-2xl"></i>
