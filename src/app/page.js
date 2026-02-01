@@ -321,7 +321,7 @@ export default function Home() {
               <h3 className="text-xl font-bold text-white mb-2">Aplikasi Android</h3>
               <p className="text-gray-400 text-sm mb-6">Bikin sekolah tampil bonafit & modern di mata wali murid.</p>
               <div className="text-4xl font-bold text-purple-400 mb-6">
-                3.5 JT <span className="text-lg text-gray-500 font-normal">/ app</span>
+                4.5 JT <span className="text-lg text-gray-500 font-normal">/ app</span>
               </div>
               <ul className="text-gray-300 text-sm space-y-3 mb-8 flex-grow">
                 <li className="flex gap-2"><i className="fas fa-check text-purple-500"></i> <b>File APK Android (.apk)</b></li>
