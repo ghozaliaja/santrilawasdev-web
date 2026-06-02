@@ -257,8 +257,105 @@ export default function Home() {
 
 
 
-      {/* --- PRICING SECTION (HARGA KHIDMAT / SEDULUR) --- */}
+      {/* --- PRODUK DIGITAL SECTION --- */}
       <section className="py-20 px-4 relative">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 text-center">
+            Produk <span className="text-emerald-400">Siap Pakai</span>
+          </h2>
+          <p className="text-gray-400 text-center mb-12 max-w-2xl mx-auto">
+            Aplikasi desktop yang bisa langsung dipakai tanpa perlu custom development.
+          </p>
+
+          <div className="max-w-2xl mx-auto mb-20">
+            <div className="spotlight-card bg-slate-800 rounded-xl border-2 border-emerald-500 overflow-hidden relative group shadow-[0_0_40px_rgba(16,185,129,0.3)]">
+              <div className="absolute top-0 right-0 bg-emerald-500 text-black text-xs font-bold px-4 py-1.5 rounded-bl-lg">
+                BEST SELLER
+              </div>
+              
+              {/* Screenshot Preview */}
+              <div className="relative overflow-hidden rounded-t-xl">
+                <img
+                  src="/projects/absensi-qr-dashboard.jpg"
+                  alt="AbsensiQR Dashboard Preview"
+                  className="w-full object-cover object-top max-h-64 group-hover:scale-105 transition duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-800 via-transparent to-transparent"></div>
+              </div>
+
+              <div className="p-8">
+                <div className="flex items-start gap-6">
+                  <div className="w-20 h-20 bg-emerald-500/20 rounded-lg flex items-center justify-center text-4xl shrink-0">
+                    🖥️
+                  </div>
+                  <div className="flex-grow">
+                    <h3 className="text-2xl font-bold text-white mb-2">AbsensiQR Desktop App</h3>
+                    <p className="text-gray-400 text-sm mb-4">
+                      Aplikasi Windows untuk absensi karyawan/santri/siswa pakai QR Code & RFID. 
+                      Scan → Tersimpan di database lokal (SQLite) → Export laporan ke Excel. Full offline.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-6 space-y-3">
+                  <div className="flex items-center gap-2 text-gray-300 text-sm">
+                    <i className="fas fa-check-circle text-emerald-400"></i>
+                    File <b>.exe</b> siap install (Windows 7/10/11)
+                  </div>
+                  <div className="flex items-center gap-2 text-gray-300 text-sm">
+                    <i className="fas fa-check-circle text-emerald-400"></i>
+                    QR Code & <b>RFID</b> Scanner terintegrasi
+                  </div>
+                  <div className="flex items-center gap-2 text-gray-300 text-sm">
+                    <i className="fas fa-check-circle text-emerald-400"></i>
+                    Database offline — nggak butuh internet sama sekali
+                  </div>
+                  <div className="flex items-center gap-2 text-gray-300 text-sm">
+                    <i className="fas fa-check-circle text-emerald-400"></i>
+                    Manajemen data Siswa & Guru
+                  </div>
+                  <div className="flex items-center gap-2 text-gray-300 text-sm">
+                    <i className="fas fa-check-circle text-emerald-400"></i>
+                    Rekap laporan & Export Excel
+                  </div>
+                  <div className="flex items-center gap-2 text-gray-300 text-sm">
+                    <i className="fas fa-check-circle text-emerald-400"></i>
+                    Cetak QR Card, setting jam absensi & hari libur
+                  </div>
+                </div>
+
+                <div className="mt-8 flex items-end justify-between flex-wrap gap-4">
+                  <div>
+                    <div className="text-4xl font-bold text-emerald-400">
+                      Rp 150.000
+                    </div>
+                    <p className="text-gray-500 text-xs mt-1">Lisensi 1 PC · Bayar & download langsung</p>
+                  </div>
+                  <a
+                    href="https://lynk.id/ghozalielrifai"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-8 py-3 bg-emerald-500 text-black rounded-lg hover:bg-emerald-400 font-bold transition shadow-lg flex items-center gap-2"
+                  >
+                    <i className="fas fa-download"></i>
+                    Beli & Download
+                  </a>
+                </div>
+
+                <div className="mt-6 p-4 bg-gray-900/50 rounded-lg border border-gray-700">
+                  <p className="text-xs text-gray-400">
+                    <i className="fas fa-bolt text-emerald-400 mr-1"></i>
+                    <b>Instan.</b> Klik tombol di atas → langsung ke halaman pembelian di lynk.id → bayar → file <b>.exe langsung bisa didownload</b>.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* --- PRICING SECTION (HARGA KHIDMAT / SEDULUR) --- */}
+      <section className="py-20 px-4 relative border-t border-gray-800">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 text-center">
             Paket <span className="text-emerald-400">Digitalisasi Umat</span>
