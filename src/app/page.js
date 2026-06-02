@@ -44,9 +44,12 @@ export default function Home() {
 
       <nav className="fixed w-full z-50 bg-dark/80 backdrop-blur-md border-b border-gray-800">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="text-xl font-bold font-mono text-white flex items-center gap-1">
-            <ShinyText text="SantriLawas" disabled={false} speed={3} className="font-bold" />
-            <span className="text-primary">Dev</span>
+          <div className="flex items-center gap-3">
+            <img src="/logo.png" alt="SLD Logo" className="h-9 w-auto" />
+            <div className="text-xl font-bold font-mono text-white flex items-center gap-1">
+              <ShinyText text="SantriLawas" disabled={false} speed={3} className="font-bold" />
+              <span className="text-primary">Dev</span>
+            </div>
           </div>
           <a href="mailto:ghozali.elrifai@gmail.com" className="text-sm hover:text-primary transition">
             Contact
@@ -443,6 +446,9 @@ export default function Home() {
       </section>
 
       <footer className="py-10 text-center border-t border-gray-800">
+        <div className="flex justify-center mb-4">
+          <img src="/logo.png" alt="SLD Logo" className="h-12 w-auto opacity-80" />
+        </div>
         <p className="text-xl italic font-serif text-gray-400 mb-6">"Man Jadda Wajada - Code with Heart."</p>
         <p className="text-gray-600 text-sm">&copy; 2025 Muh Ghozali Arrifa'i. All Rights Reserved.</p>
       </footer>

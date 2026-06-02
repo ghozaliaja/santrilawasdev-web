@@ -9,6 +9,10 @@ export const metadata = {
   title: "Santri Lawas Dev | Jasa Pembuatan Website & Aplikasi Murah",
   description: "Jasa bikin website sekolah, toko online, dan aplikasi Android. Harga santri, kualitas mumpuni. Melayani seluruh Indonesia.",
   keywords: "jasa web murah, buat website sekolah, aplikasi android murah, web developer santri",
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
 };
 
 export default function RootLayout({ children }) {
