@@ -327,7 +327,7 @@ export default function Home() {
                 <div className="mt-8 flex items-end justify-between flex-wrap gap-4">
                   <div>
                     <div className="text-4xl font-bold text-emerald-400">
-                      Rp 150.000
+                      Rp 350.000
                     </div>
                     <p className="text-gray-500 text-xs mt-1">Lisensi 1 PC · Bayar & download langsung</p>
                   </div>
